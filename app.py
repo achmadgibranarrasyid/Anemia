@@ -105,3 +105,24 @@ with col2:
 st.divider()
 
 st.caption("Dashboard Prediksi Hemoglobin menggunakan Random Forest Regression")
+st.markdown("## 📖 Penjelasan Parameter")
+
+with st.expander("🩸 MCH (Mean Corpuscular Hemoglobin)"):
+    st.write("""
+    MCH menunjukkan rata-rata jumlah hemoglobin yang terkandung
+    dalam setiap sel darah merah. Nilai rendah dapat mengindikasikan
+    anemia defisiensi besi.
+    """)
+
+with st.expander("🩸 MCHC (Mean Corpuscular Hemoglobin Concentration)"):
+    st.write("""
+    MCHC menunjukkan konsentrasi hemoglobin di dalam sel darah merah.
+    Nilai rendah sering ditemukan pada anemia hipokromik.
+    """)
+
+with st.expander("🩸 MCV (Mean Corpuscular Volume)"):
+    st.write("""
+    MCV menunjukkan ukuran rata-rata sel darah merah.
+    Nilai rendah mengarah pada anemia mikrositik,
+    sedangkan nilai tinggi mengarah pada anemia makrositik.
+    """)
